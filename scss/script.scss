@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body{
 	@media(max-width: 768px){
@@ -13,13 +14,20 @@ body{
 .introduction {
 position: relative;
 top: 7rem;
+margin-bottom: 175px;
 
 }
 ._container {
+
 	max-width: 1140 / 1250 * 100%;
 	margin: 0 auto;
 }
 .introduction__row {
+
+	& .red {
+		font-size: 2.8rem;
+			color: #EE4248;
+		}
 	@media(max-width:1058px){
 	flex-wrap: wrap;
 	margin:-24px 0px;
@@ -57,7 +65,6 @@ margin-bottom:0.3em ;
 
 }
 .red {
-font-size: 2.8rem;
 	color: #EE4248;
 }
 .introduction__subtitle {
@@ -89,7 +96,7 @@ max-width: 100%;
 
 
 .header {
-
+background-color: #fff;
 z-index: 10000000;
 width: 100%;
 position: fixed;
@@ -249,4 +256,66 @@ width: 100%;
 			display: block;
 		}
 	}
+}
+
+.greetings {
+}
+._container {
+}
+.greetings__row {
+	@media(max-width:1058px){
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+		}
+	display: flex;
+	align-items: flex-end;
+}
+.greetings__column {
+	&:last-child{
+		flex-basis: 50%;
+	}
+	@media(max-width:1058px){
+		align-self: center;
+		&:not(:first-child){
+			flex-basis: 100%;
+		}
+		&:last-child{
+			.greetings__text{
+				font-size: 25px;
+			}
+		}
+	}
+}
+.greetings__img {
+	margin-right: 5.125em;
+	max-width: 100%;
+}
+.greetings__title {
+	margin-bottom: 1.125em;
+	@media(max-width:1058px){
+		text-align: center;
+		font-size: 3rem;
+		line-height: 3.625rem;
+	}
+	font-size: 2rem;
+	font-family: Roboto;
+font-weight: 500;
+line-height:2.625rem ;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.red {
+}
+.greetings__text {
+	font-family: Roboto;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color: #30444E;
+
+}
+.greetings__paragraph {
 }
