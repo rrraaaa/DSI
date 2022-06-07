@@ -259,6 +259,7 @@ width: 100%;
 }
 
 .greetings {
+	margin-bottom: 7.25rem;
 }
 ._container {
 }
@@ -279,16 +280,15 @@ width: 100%;
 		&:not(:first-child){
 			flex-basis: 100%;
 		}
-		&:last-child{
-			.greetings__text{
-				font-size: 25px;
-			}
-		}
+	
 	}
 }
 .greetings__img {
 	margin-right: 5.125em;
 	max-width: 100%;
+	@media(max-width:1058px){
+		margin-right: 0;
+		}
 }
 .greetings__title {
 	margin-bottom: 1.125em;
@@ -296,6 +296,10 @@ width: 100%;
 		text-align: center;
 		font-size: 3rem;
 		line-height: 3.625rem;
+	}
+	@media(min-width:1400px){
+		font-size: 2.5rem;
+		line-height: 3rem;
 	}
 	font-size: 2rem;
 	font-family: Roboto;
@@ -308,6 +312,13 @@ text-align: left;
 .red {
 }
 .greetings__text {
+	@media(min-width:1400px){
+		font-size: 1.5rem;
+	}
+
+	@media(max-width:1058px){
+		font-size: 25px;
+	}
 	font-family: Roboto;
 font-size: 18px;
 font-weight: 500;
@@ -318,4 +329,85 @@ color: #30444E;
 
 }
 .greetings__paragraph {
+}
+
+
+
+.product {
+}
+
+.product__title-main{
+	margin-bottom: 2rem;
+	color:#1F2E35;
+	font-family: Roboto;
+font-size: 2rem;
+font-weight: 500;
+line-height: 2.6875rem;
+letter-spacing: 0em;
+text-align: center;
+
+}
+._container {
+}
+.product__title {
+	font-family: Roboto;
+font-size: 1.175rem;
+font-weight: 500;
+line-height: 2.3125;
+letter-spacing: 0em;
+text-align: left;
+color:#EE4248 ;
+
+}
+.product__row {
+	@media(max-width:1058px){
+		flex-wrap: wrap;
+
+		margin: 0px;
+		}
+	display: flex;
+	margin: 0rem 3.3125rem;
+}
+.product__column {
+	@media(max-width:1058px){
+		padding: 3.125rem 3.3125rem;
+		flex-basis: 100%;
+		}
+	padding: 0rem 3.3125rem;
+justify-content: space-between;
+	flex: 1 1 33.33%;
+	display: flex;
+	flex-direction: column;
+
+}
+.product__img {
+	max-width: 100%;
+}
+.product__text {
+	margin-bottom: 1.066rem;
+	color: #30444E;
+	font-family: Roboto;
+font-size: 1.125rem;
+font-weight: 400;
+line-height: 1.6875rem;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.product__button {
+
+	background: #EE4248;
+	font-family: Roboto;
+font-size: 1.125rem;
+font-weight: 400;
+line-height: 1.625rem;
+letter-spacing: 0em;
+text-align: left;
+color: #fff;
+width: 7.4375rem;
+height: 2.625rem;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
