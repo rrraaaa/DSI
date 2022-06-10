@@ -415,7 +415,7 @@ align-items: center;
 
 
 .subheader {
-
+margin-bottom: 1.2rem;
 }
 
 .subheader__limiter{
@@ -497,4 +497,32 @@ line-height: 1.6875rem;
 letter-spacing: 0em;
 text-align: left;
 color:#263238;
+}
+
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #EE4248;
+	& span {
+		font-family: Roboto;
+font-size: 18rem / 16rem;
+font-weight: 500;
+line-height: 21rem / 16rem;
+color: #fff;
+padding: 1rem 0rem;
+	}
+}
+html,
+body{
+	height: 100%;
+}
+
+.wrapper{
+	min-height: 100%;
+}
+
+.main{
+	flex: 1 1 auto;
 }
