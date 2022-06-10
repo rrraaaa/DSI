@@ -420,15 +420,27 @@ align-items: center;
 
 .subheader__limiter{
 	max-width: 66%;
+	@media(max-width:1058px){
+		margin: 0 auto;
+		}
 }
 ._container {
 }
 .subheader__row {
+	@media(max-width:1058px){
+		flex-direction: column;
+		margin:-3.3125rem 0rem ;
+		align-items: start;
+		}
 	align-items: center;
 	margin: 0rem -3.3125rem;
 	display: flex;
 }
 .subheader__column {
+	@media(max-width:1058px){
+		padding:3.3125rem 0rem ;
+		flex-basis: 66%;
+		}
 	margin:-0.6rem 0 ;
 	& *{
 		&:first-child{
