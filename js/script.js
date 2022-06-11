@@ -10,6 +10,7 @@ getBurger.addEventListener("click", function(){
 
 
 const getServices = document.querySelector('#services');
+const getProd = document.querySelector('#product');
 const getAbout = document.querySelector('#about');
 const getClient = document.querySelector('#client');
 const getPartner = document.querySelector('#partner');
@@ -17,6 +18,22 @@ const getBlockProductService = document.querySelector('.product');
 
 
 getServices.addEventListener("click", scrollToInfo);
+
+function scrollToInfo(){
+	function mainScroll(){
+		getBlockProductService.scrollIntoView({
+			behavior:'smooth',
+			block: "start",
+			 inline: "start"
+		})
+		getMenu.classList.toggle('active');
+	}
+	let timerScroll = setTimeout(mainScroll, 0 );
+	return timerScroll;
+}
+
+
+getProd.addEventListener("click", scrollToInfo);
 
 function scrollToInfo(){
 	function mainScroll(){
