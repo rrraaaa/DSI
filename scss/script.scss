@@ -155,7 +155,12 @@ justify-content: space-between;
 	line-height: 21px;
 	color: #1F2E35CC;
 	padding: 0 0.6rem;
+	& a{
+		text-decoration: none;
+		color: #1F2E35CC;
+	}
 }
+
 .header__icons {
 
 	position: relative;
@@ -540,3 +545,5 @@ body{
 		flex-basis: 50%;
 	}
 }
+
+ 
