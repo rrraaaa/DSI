@@ -25,6 +25,7 @@ function scrollToInfo(){
 			block: "start",
 			 inline: "start"
 		})
+		getMenu.classList.toggle('active');
 	}
 	let timerScroll = setTimeout(mainScroll, 0 );
 	return timerScroll;

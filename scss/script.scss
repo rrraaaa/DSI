@@ -145,19 +145,21 @@ justify-content: space-between;
 		color: #eee;
 		padding: 30px 10px;
 		}
-
-		@media(max-width:1058px){
-			font-size: 1rem;
-			}
-	font-family: Roboto;
-	font-size: 1.125rem;
-	font-weight: 400;
-	line-height: 21px;
-	color: #1F2E35CC;
-	padding: 0 0.6rem;
+		flex-basis: 16.66667%;
+padding: 0 1rem;
 	& a{
-		text-decoration: none;
+		font-family: Roboto;
+		font-size: 1.125rem;
+		font-weight: 400;
+		line-height: 21px;
 		color: #1F2E35CC;
+		text-decoration: none;
+		@media(max-width: 768px){
+			color: #eee;
+			}
+			@media(max-width:1058px){
+				font-size: 1rem;
+				}
 	}
 }
 
@@ -542,7 +544,6 @@ body{
 	margin: 0rem -0.25rem;
 	& *{
 		padding: 0rem 0.25rem;
-		flex-basis: 50%;
 	}
 }
 
