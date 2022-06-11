@@ -145,8 +145,12 @@ justify-content: space-between;
 		color: #eee;
 		padding: 30px 10px;
 		}
+
+		@media(max-width:1058px){
+			font-size: 1rem;
+			}
 	font-family: Roboto;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 400;
 	line-height: 21px;
 	color: #1F2E35CC;
@@ -525,4 +529,14 @@ body{
 
 .main{
 	flex: 1 1 auto;
+}
+
+
+#dropped-menu{
+	display: flex;
+	margin: 0rem -0.25rem;
+	& *{
+		padding: 0rem 0.25rem;
+		flex-basis: 50%;
+	}
 }
