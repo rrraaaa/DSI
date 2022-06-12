@@ -8,7 +8,7 @@ getBurger.addEventListener("click", function(){
 });
 
 
-
+const getBlockPartner = document.querySelector('.subheader')
 const getServices = document.querySelector('#services');
 const getProd = document.querySelector('#product');
 const getAbout = document.querySelector('#about');
@@ -17,27 +17,48 @@ const getPartner = document.querySelector('#partner');
 const getBlockProductService = document.querySelector('.product');
 
 
-getServices.addEventListener("click", scrollToInfo);
+getServices.addEventListener("click", scrollToInfoService);
 
-function scrollToInfo(){
+function scrollToInfoService(){
 	function mainScroll(){
 		getBlockProductService.scrollIntoView({
 			behavior:'smooth',
 			block: "start",
 			 inline: "start"
 		})
-		getMenu.classList.toggle('active');
+		getMenu.classList.remove('active');
+		getBurger.classList.remove('active');
+		getBody.classList.remove('lock');
 	}
 	let timerScroll = setTimeout(mainScroll, 0 );
 	return timerScroll;
 }
 
 
-getProd.addEventListener("click", scrollToInfo);
+getProd.addEventListener("click", scrollToInfoProd);
 
-function scrollToInfo(){
+function scrollToInfoProd(){
 	function mainScroll(){
 		getBlockProductService.scrollIntoView({
+			behavior:'smooth',
+			block: "start",
+			 inline: "start"
+		})
+		getMenu.classList.remove('active');
+		getBurger.classList.remove('active');
+		getBody.classList.remove('lock');
+	}
+	let timerScroll = setTimeout(mainScroll, 0 );
+	return timerScroll;
+}
+
+
+
+getPartner.addEventListener("click", scrollToInfoPartner);
+
+function scrollToInfoPartner(){
+	function mainScroll(){
+		getBlockPartner.scrollIntoView({
 			behavior:'smooth',
 			block: "start",
 			 inline: "start"
@@ -49,6 +70,3 @@ function scrollToInfo(){
 	let timerScroll = setTimeout(mainScroll, 0 );
 	return timerScroll;
 }
-
-
-
