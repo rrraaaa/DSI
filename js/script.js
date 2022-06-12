@@ -42,7 +42,9 @@ function scrollToInfo(){
 			block: "start",
 			 inline: "start"
 		})
-		getMenu.classList.toggle('active');
+		getMenu.classList.remove('active');
+		getBurger.classList.remove('active');
+		getBody.classList.remove('lock')
 	}
 	let timerScroll = setTimeout(mainScroll, 0 );
 	return timerScroll;

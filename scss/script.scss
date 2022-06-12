@@ -132,7 +132,6 @@ z-index: 1;
 	left: 0;
 	background-color: #666;
 		&.active{
-			
 			top: 76px;
 		}
 	}
@@ -146,7 +145,7 @@ justify-content: space-between;
 		padding: 30px 10px;
 		}
 		flex-basis: 16.66667%;
-padding: 0 1rem;
+padding: 0 0.3rem;
 	& a{
 		font-family: Roboto;
 		font-size: 1.125rem;
@@ -542,8 +541,13 @@ body{
 #dropped-menu{
 	display: flex;
 	margin: 0rem -0.25rem;
+	align-items: center;
 	& *{
 		padding: 0rem 0.25rem;
+		&:last-child{
+			width: 13px;
+			height: 9px;
+		}
 	}
 }
 
