@@ -633,7 +633,14 @@ display: block;
 }
 
 
+
+
+.arrow{
+	transition: all .5s ease-out 0s;
+	transform: rotate(0deg);
+}
 ._active-menu{
+	
 	top: 200%;
 opacity: 1;
 @media(max-width:768px){
@@ -647,6 +654,10 @@ opacity: 1;
 
 }
 
-.arrow{
+ ._arrow-active{
+	transform: rotate(-180deg);
+}
 
+.arrow_one{
+	transition: all .5s ease-out 0s;
 }

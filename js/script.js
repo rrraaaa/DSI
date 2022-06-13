@@ -85,12 +85,14 @@ getArrowOne.addEventListener("click", openMenu);
 
 function openMenu(event){
 getHeaderPopMenu.classList.toggle('_active-menu');
-event.target.classList.toggle('_active-menu');
+event.target.classList.toggle('_arrow-active');
 }
 
 getArrowTwo.addEventListener("click", openMenuFirst);
 
 function  openMenuFirst(event){
 	getHeaderPopMenuOne.classList.toggle('_active-menu');
-	event.target.classList.toggle('_active-menu');
+	getArrowTwo.classList.toggle('_arrow-active');
 }
+
+
