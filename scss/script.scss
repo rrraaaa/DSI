@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body{
 	@media(max-width: 768px){
 		&.lock{
@@ -95,12 +96,14 @@ max-width: 100%;
 }
 
 
+
 .header {
 background-color: #fff;
 z-index: 10000000;
 width: 100%;
 position: fixed;
 	border-bottom: 2px solid #eee;
+	transition: all 0.3s ease 0s;
 }
 ._container {
 	padding:5px 0px ;
@@ -555,14 +558,14 @@ body{
 
 
 #dropped-menu{
-	
+	position: relative;
 
 	display: flex;
 	margin: 0rem -0.25rem;
 	align-items: center;
-	& *{
+	& *:not(:last-child){
 		padding: 0rem 0.25rem;
-		&:last-child{
+		& img{
 			max-width: 13px;
 			max-height: 9px;
 		}
@@ -574,3 +577,76 @@ body{
 }
 
  
+
+
+.header__pop-menu-row{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__pop-menu-content{
+	margin: .4rem .2rem ;
+	max-width: 100%;
+
+}
+.header__pop-menu , .header__pop-menu_first{
+	transition: all 0.3s ease 0s;
+	transform: translateY(50px);
+	display: none;
+	
+& *{
+
+}
+	position: absolute;
+background: #fff;
+box-shadow: 7px 7px 10px red;
+
+	top: 200%;
+	@media(max-width:768px){
+		top: 70%;
+		}
+		z-index: 100;
+max-width: 100%;
+
+border: 2px solid #666;
+
+}
+.header__pop-menu-item {
+
+	transition: all .5s ease-out .2s;
+
+&:not(:last-child){
+	border-bottom: 1px solid #666;
+
+}
+text-align: center;
+list-style: none;
+position: relative;
+right: 60%;
+@media(max-width:768px){
+	right: 35%;
+	}
+& a{
+	padding-top: 1rem;
+color: #1F2E35CC;
+font-size: 16px;
+display: block;
+}
+}
+
+
+._active-menu{
+	transition: all 0.3s ease 0s;
+	transform: translateY(0px);
+	display: block;
+}
+
+.arrow{
+	transform: rotate(0deg);
+	& ._active-menu{
+		transform: rotate(-180deg);
+	
+	}
+}

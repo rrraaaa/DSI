@@ -1,3 +1,4 @@
+//!Enable/Disable burger menu
 const getMenu = document.querySelector('.header__menu');
 const getBurger = document.querySelector('.header__burger');
 getBody = document.body;
@@ -8,6 +9,8 @@ getBurger.addEventListener("click", function(){
 });
 
 
+
+//! Scrolling to current block clicking on header menu items
 const getBlockPartner = document.querySelector('.subheader')
 const getServices = document.querySelector('#services');
 const getProd = document.querySelector('#product');
@@ -69,4 +72,25 @@ function scrollToInfoPartner(){
 	}
 	let timerScroll = setTimeout(mainScroll, 0 );
 	return timerScroll;
+}
+
+
+//! Enable pop menu on click to arrow
+const getArrowOne = document.querySelector('.arrow');
+const getHeaderPopMenu = document.querySelector('.header__pop-menu');
+const getHeaderPopMenuOne = document.querySelector('.header__pop-menu_first');
+const getArrowTwo = document.querySelector('.arrow_one');
+
+getArrowOne.addEventListener("click", openMenu);
+
+function openMenu(event){
+getHeaderPopMenu.classList.toggle('_active-menu');
+event.target.classList.toggle('_active-menu');
+}
+
+getArrowTwo.addEventListener("click", openMenuFirst);
+
+function  openMenuFirst(event){
+	getHeaderPopMenuOne.classList.toggle('_active-menu');
+	event.target.classList.toggle('_active-menu');
 }
