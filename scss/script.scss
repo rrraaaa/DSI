@@ -532,17 +532,19 @@ color:#263238;
 
 
 .footer {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: #EE4248;
 	& span {
+		text-align: center;
 		font-family: Roboto;
 font-size: 18rem / 16rem;
 font-weight: 500;
 line-height: 21rem / 16rem;
 color: #fff;
-padding: 1rem 0rem;
+padding: 1rem 1rem;
 	}
 }
 html,
