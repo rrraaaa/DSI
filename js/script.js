@@ -86,6 +86,10 @@ getArrowOne.addEventListener("click", openMenu);
 function openMenu(event){
 getHeaderPopMenu.classList.toggle('_active-menu');
 event.target.classList.toggle('_arrow-active');
+if(getHeaderPopMenuOne.classList.contains('_active-menu')){
+	getHeaderPopMenu.classList.remove('_active-menu');
+	getArrowOne.classList.remove('_arrow-active');
+}
 }
 
 getArrowTwo.addEventListener("click", openMenuFirst);
@@ -93,6 +97,12 @@ getArrowTwo.addEventListener("click", openMenuFirst);
 function  openMenuFirst(event){
 	getHeaderPopMenuOne.classList.toggle('_active-menu');
 	getArrowTwo.classList.toggle('_arrow-active');
+	if(getHeaderPopMenu.classList.contains('_active-menu')){
+		getHeaderPopMenuOne.classList.remove('_active-menu');
+			getArrowTwo.classList.remove('_arrow-active');
+	}
 }
+
+
 
 
