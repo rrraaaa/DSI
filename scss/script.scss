@@ -603,7 +603,7 @@ box-shadow: 7px 7px 10px red;
 	@media(max-width:768px){
 		top: 70%;
 		}
-		z-index: 100;
+		z-index: 0;
 max-width: 100%;
 border: 2px solid #666;
 
@@ -638,9 +638,10 @@ display: block;
 .arrow{
 	transition: all .5s ease-out 0s;
 	transform: rotate(0deg);
+	z-index: 10;
 }
 ._active-menu{
-	
+	z-index: 1000;
 	top: 200%;
 opacity: 1;
 @media(max-width:768px){
