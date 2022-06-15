@@ -150,12 +150,14 @@ justify-content: space-between;
 
 
 .header__menu-item {
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	@media(max-width: 768px){
-		
-
+		&:last-child{
+		z-index: 0;
+	}
 		color: #eee;
 		padding: 0.8rem 0;
 		flex-basis: 8.3%;
@@ -641,7 +643,7 @@ display: block;
 	z-index: 10;
 }
 ._active-menu{
-	z-index: 1000;
+	z-index: 1000000000;
 	top: 200%;
 opacity: 1;
 @media(max-width:768px){
